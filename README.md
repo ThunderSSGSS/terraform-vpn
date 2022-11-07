@@ -22,7 +22,7 @@ The module was tested using:
 # "aws_vpc.example", "aws_subnet.example", "aws_acm_certificate.server" and "aws_acm_certificate.ca"
 
 module "example_vpn" {
-    source                  = ...
+    source                  = "github.com/ThunderSSGSS/terraform-vpn"
     vpn_name                = "my-vpn"
     vpc_id                  = aws_vpc.example.id
     vpc_cidr_block          = aws_vpc.example.cidr_block
